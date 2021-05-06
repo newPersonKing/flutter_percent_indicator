@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:percent_indicator_example/sample_circular_page.dart';
-import 'package:percent_indicator_example/sample_linear_page.dart';
+
+import 'sample_circular_page.dart';
+import 'sample_linear_page.dart';
+import 'sample_linear_page_extend.dart';
 
 void main() {
   runApp(MaterialApp(home: Scaffold(body: SamplePage())));
@@ -41,6 +43,14 @@ class _SamplePageState extends State<SamplePage> {
               color: Colors.blueAccent,
               child: Text("Linear Library"),
               onPressed: () => _openPage(SampleLinearPage()),
+            ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+            ),
+            MaterialButton(
+              color: Colors.blueAccent,
+              child: Text("Cus Linear Library"),
+              onPressed: () => _openPage(SampleLinearExtendPage()),
             ),
           ],
         ),

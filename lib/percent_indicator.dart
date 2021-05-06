@@ -2,3 +2,4 @@ library percent_indicator;
 
 export 'circular_percent_indicator.dart';
 export 'linear_percent_indicator.dart';
+export 'gy_extend/cus_linear_percent_indicator.dart';
